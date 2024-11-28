@@ -1,0 +1,8 @@
+.cache
+.git
+.idea
+.vscode
+**/.gitignore
+**/_build
+**/build
+**/node_modules

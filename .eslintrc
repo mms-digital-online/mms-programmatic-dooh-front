@@ -1,0 +1,41 @@
+{
+  "extends": "react-app",
+  "plugins": ["eslint-plugin-simple-import-sort"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "rules": {
+    "simple-import-sort/sort": 2,
+    "arrow-body-style": ["error", "as-needed"],
+    "arrow-parens": ["error", "always"],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": false,
+        "minKeys": 5
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "varsIgnorePattern": "^__.*[eE]xhaustiveCheck$",
+        "argsIgnorePattern": "^_$"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.css.ts", "*.config.js"],
+      "rules": {
+        "sort-keys": 0
+      }
+    }
+  ]
+}

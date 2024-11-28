@@ -1,0 +1,8 @@
+{
+  "presets": ["@babel/react", "@babel/typescript", "@babel/env"],
+  "plugins": [
+    ["@babel/plugin-transform-typescript", { "allowNamespaces": true }],
+    "@babel/plugin-transform-runtime",
+    "@babel/proposal-class-properties"
+  ]
+}
